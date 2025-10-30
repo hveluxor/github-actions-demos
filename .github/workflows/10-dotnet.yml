@@ -23,7 +23,7 @@ defaults:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: tenki-staging-standard-autoscale
 
     steps:
       - uses: actions/checkout@v4.1.1
@@ -64,7 +64,7 @@ jobs:
   deploy-webapp:
     needs: [build]
     environment: dotnet
-    runs-on: ubuntu-latest
+    runs-on: tenki-staging-standard-autoscale
     steps:
       # Checkout code
       - name: Download IaC

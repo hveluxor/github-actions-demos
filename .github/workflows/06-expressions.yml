@@ -13,7 +13,6 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
 env:
   formatting: ${{ format('{{Hello {0} {1} {2}!}}', 'Mona', 'the', 'Octocat') }}
   endsWith: ${{ endsWith('Hello world', 'ld') }}
@@ -26,7 +25,7 @@ jobs:
   # This workflow contains a single job called "build"
   job1:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: tenki-staging-standard-autoscale
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
