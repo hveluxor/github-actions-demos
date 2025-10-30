@@ -2,11 +2,10 @@ name: lint
 
 on:
   workflow_call:
-
 jobs:
   lint:
     name: Lint code
-    runs-on: ubuntu-latest
+    runs-on: tenki-staging-standard-autoscale
     steps:
       - uses: actions/checkout@v4.1.1
 
